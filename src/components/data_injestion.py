@@ -6,6 +6,7 @@ from src.logger import logging
 from src.exception import CustomException
 from sklearn.model_selection import train_test_split
 from src.components.data_transformation import DataTransformation
+from src.components.model_training import ModelTraining
 
 @dataclass
 class DataInjestionConfig:
@@ -49,6 +50,9 @@ if __name__ == '__main__':
     train_data_path, train_data_path = di_obj.initiate_data_injestion()
     dt = DataTransformation()
     train_data_preprocessed,test_data_preprocessed,_ = dt.initiate_data_tranformation(train_data_path, train_data_path)
+    mt = ModelTraining()
+    mt.initiate_model_training(train_data_preprocessed,test_data_preprocessed)
+
 
 
 
