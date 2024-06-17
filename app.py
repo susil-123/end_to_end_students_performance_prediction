@@ -9,7 +9,7 @@ app = Flask(__name__)
 def form():
     return render_template('index.html',result="")
 
-@app.route('/predict',methods=['POST'])
+@app.route('end-to-end-students-performance.onrender.com//predict',methods=['POST'])
 def predict():
     gender = request.form.get('gender')
     race_ethnicity = request.form.get('ethnicity')
