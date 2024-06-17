@@ -1,6 +1,7 @@
 from flask import Flask,request,url_for,render_template
 from src.pipelines.predict_pipeline import CustomData,PredictPipeline
 from src.utils import load_object
+import os
 
 app = Flask(__name__)
 
@@ -23,5 +24,9 @@ def predict():
     prediction = pp.predict(df)
     return render_template('index.html',result=prediction[0])
 
+# if __name__ == '__main__':
+#     app.run(host="0.0.0.0",port=5001)
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=5001)
+    host = os.getenv('HOST', '0.0.0.0')
+    port = int(os.getenv('PORT', 5001))
+    app.run(host=host, port=port)
