@@ -17,8 +17,8 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/student-performance-measurement.git
-   cd student-performance-measurement
+   git clone https://github.com/yourusername/end_to_end_students_performance_prediction.git
+   cd end_to_end_students_performance_prediction
    
 2. Create virtual enviroinment:
 
