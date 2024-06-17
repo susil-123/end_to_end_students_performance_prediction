@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    background-image: url('./../doodle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+}
+
+.form{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: white;
+    display: inline-block;
+}
+
+form{
+    transform: scale(1.2);
+    border-radius: 10px;
+    padding: 35px 50px;
+    background-color: white;
+}
+
+form h1 {
+    color: coral;
+}
+
+.mb-3{
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+input.btn-primary{
+    margin-top:15px ;
+    background-color: burlywood;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+}
+
+input.btn-primary:hover{
+    background-color:cadetblue;
+}
