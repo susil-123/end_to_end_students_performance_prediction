@@ -24,5 +24,5 @@ def predict():
     prediction = pp.predict(df)
     return render_template('index.html',result=prediction[0])
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
     app.run(host="0.0.0.0",port=5001)
